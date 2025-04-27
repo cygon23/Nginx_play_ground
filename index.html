@@ -3,118 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beautiful Landing Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
-      }
-      header {
-        background: url("images/7076118.jpg") no-repeat center center/cover;
-        color: #fff;
-        padding: 100px 0;
-        height: 150px;
-        text-align: center;
-      }
-      header h1 {
-        font-size: 3em;
-        margin: 0;
-      }
-      header p {
-        font-size: 1.2em;
-      }
-      nav {
-        background: #333;
-        color: #fff;
-        display: flex;
-        justify-content: space-around;
-        padding: 15px 0;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .container {
-        padding: 20px;
-      }
-      .grid {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-      .card {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        flex: 1;
-        min-width: 280px;
-        max-width: 300px;
-        padding: 15px;
-      }
-      .card img {
-        border-radius: 8px;
-        width: 100%;
-        height: auto;
-      }
-      footer {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: 20px;
-      }
-    </style>
+    <title>cy24</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <header> </header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Technologies</a>
-      <a href="#contact">About TechWorld with cygon</a>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-cover bg-center h-[150px] py-24 text-center text-white" style="background-image: url('images/7076118.jpg');">
+      <h1 class="text-4xl md:text-5xl font-bold">TechWorld with Nana Programs</h1>
+      <p class="text-xl mt-2">Your path to mastering technology and development.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white flex justify-around py-4">
+      <a href="#home" class="font-bold text-lg hover:text-gray-400">Home</a>
+      <a href="#about" class="font-bold text-lg hover:text-gray-400">About</a>
+      <a href="#services" class="font-bold text-lg hover:text-gray-400">Technologies</a>
+      <a href="#contact" class="font-bold text-lg hover:text-gray-400">About TechWorld with Cygon</a>
     </nav>
-    <div class="container">
-      <h2>TechWorld with Nana Programs</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="images/02.jpeg" alt="Service 1" />
-          <h3>DevOps Bootcamp</h3>
-          <p
-            >Finally learn with structured guided course, all DevOps tools
-            together</p
-          >
+
+    <!-- Main Content -->
+    <div class="container mx-auto py-12 px-6">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">TechWorld with Nana Programs</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img src="images/02.jpeg" alt="DevOps Bootcamp" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-semibold text-gray-800">DevOps Bootcamp</h3>
+          <p class="text-gray-600 mt-2">Finally learn with a structured guided course, all DevOps tools together.</p>
         </div>
-        <div class="card">
-          <img src="images/02.jpeg" alt="Service 2" />
-          <h3>Software Development LifeCycle Course</h3>
-          <p
-            >Learn the entire software Development lifecycle, from developing,
-            to testing, to provisioning server and deploying</p
-          >
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img src="images/02.jpeg" alt="Software Development LifeCycle" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-semibold text-gray-800">Software Development LifeCycle Course</h3>
+          <p class="text-gray-600 mt-2">Learn the entire software Development lifecycle, from developing, to testing, to provisioning servers and deploying.</p>
         </div>
-        <div class="card">
-          <img src="images/03.jpeg" alt="Service 3" />
-          <h3>DevSecOps Bootcamp</h3>
-          <p
-            >If you wanna become a DevOps engineer on steroids, you can face
-            this advanced bootcamp</p
-          >
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img src="images/03.jpeg" alt="DevSecOps Bootcamp" class="w-full h-64 object-cover rounded-lg mb-4" />
+          <h3 class="text-2xl font-semibold text-gray-800">DevSecOps Bootcamp</h3>
+          <p class="text-gray-600 mt-2">If you want to become a DevOps engineer on steroids, this advanced bootcamp is for you.</p>
         </div>
       </div>
     </div>
-    <footer>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 text-center">
       <p>&copy; TechWorld with Cygon. All Rights Reserved.</p>
-      <p
-        >Follow us on: <a href="#" style="color: #3b5998">Linkedin</a> |
-        <a href="#" style="color: #00aced">Twitter</a> |
-        <a href="#" style="color: #e4405f">Instagram</a>
+      <p class="mt-4">
+        Follow us on: 
+        <a href="#" class="text-blue-600 hover:underline">Linkedin</a> |
+        <a href="#" class="text-blue-400 hover:underline">Twitter</a> |
+        <a href="#" class="text-pink-600 hover:underline">Instagram</a>
       </p>
     </footer>
+    
   </body>
 </html>
